@@ -1,0 +1,33 @@
+ul {
+list-style: none;
+}
+body {
+    color: var(--first-text-color);
+    font-family: Roboto, sans-serif;
+}
+ul,
+li {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+.link {
+text-decoration: none;
+}
+textarea {
+    resize: none;
+}
+
+img {width: 100%;
+max-width: 100%;
+height: auto;}

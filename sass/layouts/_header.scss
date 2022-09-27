@@ -1,0 +1,108 @@
+.header {
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #ECECEC;
+.header__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: 80px;
+    }
+}
+
+
+.header__nav {
+    display: flex;
+}
+
+
+.site-nav .link {
+    color: var(--second-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav__link {
+    position: relative;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            color: #2196F3;
+        }
+}
+
+
+
+.site-nav {
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+}
+
+
+
+.site-contact {
+    display: flex;
+    gap: 50px;
+}
+.site-contact__link {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: var(--first-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover .header__phone-svg {
+            fill: #2196F3;
+        }
+    
+        &:focus .header__phone-svg {
+            fill: #2196F3;
+        }
+                &:focus .header__mail-svg {
+                    fill: #2196F3;
+                }
+        
+                &:hover .header__mail-svg {
+                    fill: #2196F3;
+                }
+
+                                &:hover {
+                                    color: #2196F3;
+                                }
+                
+                                &:focus {
+                                    color: #2196F3;
+                                }
+}
+
+.header__phone-svg {
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 10px;
+    fill: #757575;
+}
+
+.header__mail-svg {
+    fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
