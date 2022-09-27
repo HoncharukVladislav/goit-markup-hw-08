@@ -46,9 +46,11 @@
     width: 270px;
 
     @media screen and (max-width:480px) {
-        font-size: 14px;
-        height: 50px;
-        width: 450px;
+        font-size: 10px;
+        height: 100px;
+        width: 400px;
+        text-align: center;
+        padding-left: 70px;
         }
 
     @media screen and (min-width:481px) and (max-width:1199px) {
@@ -66,6 +68,13 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     min-width: 270px;
+
+    @media screen and (max-width:480px) {
+        text-align: center;
+
+            }
+     @media screen and (min-width:481px) and (max-width:1199px) {
+            }
 
 
 }
