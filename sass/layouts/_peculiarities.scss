@@ -36,7 +36,7 @@
 }
 
 .peculiarities__text {
-    display: block;
+    display: inline-block;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -44,12 +44,10 @@
     color: var(--first-text-color);
     height: 72px;
     width: 270px;
+    padding-left: 50px;
 
     @media screen and (max-width:480px) {
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+        
         font-size: 11px;
         height: 50px;
         width: 400px;
