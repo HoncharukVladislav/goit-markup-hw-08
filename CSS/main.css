@@ -186,19 +186,19 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -568,7 +568,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -576,7 +576,6 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section {
-    max-width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -1037,25 +1036,17 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (max-width: 480px) {
   .peculiarities {
     max-width: 480px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .peculiarities {
     min-width: 768px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -1080,7 +1071,7 @@ address {
     width: 450px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .peculiarities__icon {
     height: 120px;
     width: 354px;
@@ -1100,12 +1091,12 @@ address {
 @media screen and (max-width: 480px) {
   .peculiarities__text {
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     height: 60px;
     width: 450px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .peculiarities__text {
     height: 48px;
     width: 354px;
@@ -1261,17 +1252,20 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .clients-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    min-width: 480px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    min-width: 768px;
   }
 }
 
