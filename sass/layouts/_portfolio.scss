@@ -5,7 +5,20 @@
     border: 1px solid #EEEEEE;
     border-top: transparent;
 }
+.portfolio-nav-button {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
 
+@media screen and (max-width:767px) {
+  width: 340px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+    
+}
+}
 .team-box-div {
     position: relative;
     overflow: hidden;
@@ -15,13 +28,22 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+@media screen and (max-width:767px) {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+    }
+
+@media screen and (min-width:768px) {
+    min-width: 800px;
+    display: flex;
+
+   
+}
 }
 
-.team-ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
+
 
 
 
@@ -50,7 +72,12 @@
                 &:focus .foto-block-text {
                     transform: translateY(0%);
                 }
+
+@media screen and (min-width:768px) {
+
+}
 }
 
-
+// .aaaaa {margin: 0px;
+// }
 
