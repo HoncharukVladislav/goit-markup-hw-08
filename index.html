@@ -29,9 +29,8 @@
           <a class="header__logo-web link"  href="“#”">
             <span class="">Web</span>
             <span class="header__logo-studio">Studio</span></a>
-            <div class="qqqqq">
-              <svg width="40px" height="40px"><use href="./images/icons.svg#icon-menu"></use></svg>
-            </div>
+
+
 
         
           <ul class="site-nav link">
@@ -57,7 +56,11 @@
             </svg>+38 096 111 11 11</a>
           </li>
         </ul>
+          <button class="menu-btn js-open-menu" type="button">
+              <svg width="40px" height="40px"><use href="./images/icons.svg#icon-menu"></use></svg>
+            </button>
       </div>
+      
     </header>
 
     <main>
@@ -168,7 +171,9 @@
           <ul class="site-team list">
             <li class="site-team__list">
               <div class="team-foto">
-                <img class="team-img" src="./images/project1.jpg" width="270" alt="Игорь_Демьяненко" />
+                <img
+              
+                src="./images/project1.jpg"  alt="Игорь_Демьяненко" />
                 <div class="foto-box">
                 <h3 class="team-h">Игорь Демьяненко</h3>
                 <p><span class="position">Product Designer</span></p>
@@ -192,7 +197,7 @@
             </li>
             <li class="team-section-items">
               <div class="team-foto">
-                <img class="team-img" src="./images/img1.jpg" width="270"  alt="Ольга_Репина" />
+                <img  src="./images/img1.jpg"   alt="Ольга_Репина" />
                 <div class="foto-box">
                 <h3 class="team-h">Ольга Репина</h3>
                 <p><span class="position">Frontend Developer</span></p>
@@ -215,7 +220,7 @@
             </li>
             <li class="team-section-items">
               <div class="team-foto">
-                <img class="team-img" src="./images/img2.jpg" width="270" alt="Николай_Тарасов" />
+                <img class="team-img" src="./images/img2.jpg"  alt="Николай_Тарасов" />
                 <div class="foto-box">
                 <h3 class="team-h">Николай Тарасов</h3>
                 <p>
@@ -245,7 +250,7 @@
             </li>
             <li class="team-section-items">
               <div class="team-foto">
-                <img class="team-img" src="./images/img3.jpg"width="270"  alt="Михаил_Ермаков" />
+                <img class="team-img" src="./images/img3.jpg"  alt="Михаил_Ермаков" />
                 <div class="foto-box">
                 <h3 class="team-h">Михаил Ермаков</h3>
                 <p>
@@ -356,6 +361,30 @@
 </div>
 </footer>
 
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg height="19px" width="19px"><use href="./images/icons.svg#icon-Vectorx"></use></svg>
+  </button>
+  <ul class="menu-list">
+    <li class="bbbbb menu-list__item">Студія</li>
+    <li class="menu-list__item">
+      <a class="aaaaa link" href="./portfolio.html">Портфоліо</a>
+      </li>
+    <li class="menu-list__item">Контакти</li>
+  </ul>
+
+  <ul class="menu-contacts">
+    <li class="menu-contacts__number">+38 096 111 11 11</li>
+    <li class="menu-contacts__mail">info@devstudio.com</li>
+  </ul>
+
+  <ul class="menu-soc">
+<li class="menu-soc__item">Instagram</li>
+<li class="menu-soc__item">Twitter</li>
+<li class="menu-soc__item">Facebook</li>
+<li class="menu-soc__item">LinkedIn</li>
+  </ul>
+</div>
 
       <div class="backdrop is-hidden"data-modal>
         <div class="modal">
@@ -409,10 +438,22 @@
 
 
           </form>
+      </div>
 
-      </div>
-      </div>
-      </div>
-      <script src="./modal.js"></script>
+
+
+  <script src="./modal.js"></script>
+
+
+
+<script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+</script>
+
+  <script defer src="./mobile-menu.js"></script>
+
   </body>
 </html>
