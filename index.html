@@ -166,14 +166,18 @@
       </section>
 
       <section class="section team-section">
-        <div class="container">
+        <div class="container container__team">
           <h2 class="section-title">Наша команда</h2>
           <ul class="site-team list">
             <li class="site-team__list">
               <div class="team-foto">
+               <picture>
+                <source media="(min-width:1200px)" srcset="./images/imglgteam@1x.jpg 1x, ./images/imglgteam@2x.jpg 2x ">
+                <source media="(min-width:768px )" srcset="./images/img_mdteam@1x.jpg 1x, ./images/img_mdteam@2x.jpg 2x">
+                <source media="(min-width:480px )" srcset="./images/img_sm-team@1x.jpg 1x, ./images/img_sm-team@2x.jpg 2x">
                 <img
-              
                 src="./images/project1.jpg"  alt="Игорь_Демьяненко" />
+                </picture>
                 <div class="foto-box">
                 <h3 class="team-h">Игорь Демьяненко</h3>
                 <p><span class="position">Product Designer</span></p>
@@ -197,7 +201,12 @@
             </li>
             <li class="team-section-items">
               <div class="team-foto">
+                <picture>
+                <source media="(min-width:1200px)" srcset="./images/imglgteam@1x-1.jpg 1x, ./images/imglgteam@2x-1.jpg 2x ">
+                <source media="(min-width:768px )" srcset="./images/img_mdteam@1x-1.jpg 1x, ./images/img_mdteam@2x-1.jpg 2x">
+                <source media="(min-width:480px )" srcset="./images/img_sm-team@1x-1.jpg 1x, ./images/img_sm-team@2x-1.jpg 2x">
                 <img  src="./images/img1.jpg"   alt="Ольга_Репина" />
+              </picture>
                 <div class="foto-box">
                 <h3 class="team-h">Ольга Репина</h3>
                 <p><span class="position">Frontend Developer</span></p>
@@ -220,7 +229,13 @@
             </li>
             <li class="team-section-items">
               <div class="team-foto">
-                <img class="team-img" src="./images/img2.jpg"  alt="Николай_Тарасов" />
+                <picture>
+                  <source media="(min-width:1200px)" srcset="./images/imglgteam@1x-2.jpg 1x, ./images/imglgteam@2x-2.jpg 2x ">
+                <source media="(min-width:768px )" srcset="./images/img_mdteam@1x-2.jpg 1x, ./images/img_mdteam@2x-2.jpg 2x">
+                <source media="(min-width:480px )" srcset="./images/img_sm-team@1x-2.jpg 1x, ./images/img_sm-team@2x-2.jpg 2x">
+                  <img class="team-img" src="./images/img2.jpg"  alt="Николай_Тарасов" />
+                </picture>
+                
                 <div class="foto-box">
                 <h3 class="team-h">Николай Тарасов</h3>
                 <p>
@@ -250,7 +265,13 @@
             </li>
             <li class="team-section-items">
               <div class="team-foto">
-                <img class="team-img" src="./images/img3.jpg"  alt="Михаил_Ермаков" />
+                <picture>
+                  <source media="(min-width:1200px)" srcset="./images/imglgteam@1x-3.jpg 1x, ./images/imglgteam@2x-3.jpg 2x ">
+                <source media="(min-width:768px )" srcset="./images/img_mdteam@1x-3.jpg 1x, ./images/img_mdteam@2x-3.jpg 2x">
+                <source media="(min-width:480px )" srcset="./images/img_sm-team@1x-3.jpg 1x, ./images/img_sm-team@2x-3.jpg 2x">
+                 <img class="team-img" src="./images/img3.jpg"  alt="Михаил_Ермаков" />
+                </picture>
+                
                 <div class="foto-box">
                 <h3 class="team-h">Михаил Ермаков</h3>
                 <p>
@@ -365,6 +386,7 @@
   <button class="menu-toggle js-close-menu">
     <svg height="19px" width="19px"><use href="./images/icons.svg#icon-Vectorx"></use></svg>
   </button>
+
   <ul class="menu-list">
     <li class="bbbbb menu-list__item">Студія</li>
     <li class="menu-list__item">
@@ -373,6 +395,7 @@
     <li class="menu-list__item">Контакти</li>
   </ul>
 
+ 
   <ul class="menu-contacts">
     <li class="menu-contacts__number">+38 096 111 11 11</li>
     <li class="menu-contacts__mail">info@devstudio.com</li>
@@ -383,7 +406,11 @@
 <li class="menu-soc__item">Twitter</li>
 <li class="menu-soc__item">Facebook</li>
 <li class="menu-soc__item">LinkedIn</li>
-  </ul>
+  
+</ul>
+
+
+
 </div>
 
       <div class="backdrop is-hidden"data-modal>

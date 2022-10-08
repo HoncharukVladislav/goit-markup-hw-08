@@ -1,4 +1,6 @@
 .menu-container {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -9,6 +11,7 @@
     padding-top: 48px;
     padding-left: 40px;
     padding-right: 83px;
+    padding-bottom: 48px;
 
     transform: translateX(100%);
     transition: transform 400ms;
@@ -44,7 +47,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-
+margin-bottom: auto;
 }
 
 .menu-list__item {
@@ -57,14 +60,14 @@
 .aaaaa {color: #212121;}
 .bbbbb {color: #2196F3;}
 .menu-contacts {
-    margin-top: 308px;
+    // margin-top: 308px;
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
 .menu-contacts__number{
-    
+
         font-weight: 500;
         font-size: 34px;
         line-height: 1.17;
