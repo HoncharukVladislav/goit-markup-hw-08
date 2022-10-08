@@ -629,6 +629,7 @@ img {
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: #2196F3;
 }
 
