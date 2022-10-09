@@ -53,14 +53,26 @@
     
 
     @media screen and (min-width:480px) and (max-width:767px) {
-        font-size: 11px;
-        height: 60px;
-        width: 354px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    width: 450px;
+
+    color: #757575;
         }
 
     @media screen and (min-width:768px) and (max-width:1199px) {
         height: 48px;
         width: 354px;
+
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: #757575;
         }
 }
 
@@ -73,7 +85,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     // min-width: 270px;
-    text-align: center;
+    
 
     @media screen and (min-width:480px) {
         display: block;
@@ -83,7 +95,7 @@
 
             }
      @media screen and (min-width:768px) and (max-width:1199px) {
-        text-align: center;
+        text-align: start;
             }
 
 
