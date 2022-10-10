@@ -14,8 +14,11 @@
         align-items: center;
     }
 
-@media screen and (min-width:768px) {
-
+@media screen and (min-width:768px) and (max-width:1199px) {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
 
 }
 
@@ -38,7 +41,7 @@
     color: #FFFFFF;
 
     @media screen and (max-width:767px) {
-        display:block;
+       display: block;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -59,8 +62,9 @@
 @media screen and (min-width:768px) and (max-width:1199px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 89px;
 }
 
 
@@ -69,13 +73,20 @@
 .mail-form {
     display: flex;
     align-items: center;
-    justify-content: center;
+
     margin-top: 20px;
     gap: 12px;
+@media screen and (max-width:479px) {
+    flex-direction: column;
 
-@media screen and (max-width:767px) {
+}
+
+@media screen and (min-width:480px) and (max-width:1199px) {
+    align-items: center;
    flex-direction: column;
     }
+
+
 }
 .footer-web {
     color: #2196F3;
@@ -129,10 +140,16 @@ address {
 
 .footer-nav-li {
     margin-bottom: 9px;
+    text-align: center;
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width:1199px) {
     text-align: center;
     
+}
+
+@media screen and (min-width: 1200px) {
+    text-align: start;
+
 }
 }
 
@@ -171,12 +188,18 @@ address {
 }
 
 .footer-mail-div label {
+    display: block;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-top: 59px;
+   
+
+
+
 
 @media screen and (max-width:1199px) {
     margin-top: 59px;
@@ -186,13 +209,23 @@ address {
 }
 
 .footer-mail-div {
+justify-content: center;
+align-items: center;
+display: flex;
+margin-left: auto;
+display: block;
 
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
 
-@media screen and (max-width:1199px) {
-margin-left: 0px;
+@media screen and (min-width:480px) {
+
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+
+display: flex;
+flex-direction: column;
+margin-left: auto;
+margin-right: auto;
     }
 }
 
@@ -229,4 +262,22 @@ margin-left: 0px;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+}
+
+.footer-logo {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+
+    &:focus {
+        color: var(--active-hover-color);
+    }
+
+
 }

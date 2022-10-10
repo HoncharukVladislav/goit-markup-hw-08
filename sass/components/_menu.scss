@@ -74,6 +74,11 @@ margin-bottom: auto;
         letter-spacing: 0.02em;
         text-decoration: none;
         color: #2196F3;
+
+        @media screen and (max-width:480px) {
+                font-size: 20px;
+        
+            }
 }
 
 .menu-contacts__mail {
@@ -92,10 +97,15 @@ margin-bottom: auto;
 
 .menu-soc__item {
     font-weight: 500;
-        font-size: 18px;
-        line-height: 1.22;
-        letter-spacing: 0.02em;
-        color: #2196F3;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+
+    @media screen and (max-width:480px) {
+    font-size: 14px;
+        
+    }
 }
 
 

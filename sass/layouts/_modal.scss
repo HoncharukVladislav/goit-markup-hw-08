@@ -19,8 +19,7 @@
     top: 50%;
     left: 50%;
     position: absolute;
-    width: 528px;
-    /* height: 581px; */
+width: 100%;
     background-color: #FFFFFF;
 
 
@@ -30,6 +29,11 @@ max-width: 450px;
 
 }
 
+@media screen and (min-width:1200px) {
+    max-width: 528px;
+
+
+}
 
 }
 
@@ -37,15 +41,19 @@ max-width: 450px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 528px;
-    padding: 40px;
+    padding: 15px;
+    width: 100%;
+    
+
+
 
 @media screen and (min-width:480px) and (max-width:1199px) {
     width: 450px;
+    padding: 40px;
     
 }
 
-@media screen and (min-width:480px) and (min-width:1200px) {
+@media screen and (min-width:1200px) {
     display: block;
         margin-left: auto;
         margin-right: auto;
@@ -53,37 +61,91 @@ max-width: 450px;
         padding: 40px;
 
 }
-
 }
 .modal-title {
-    width: 448px;
+  
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
     color: #212121;
+margin-left: auto;
+margin-right: auto;
+
 
 @media screen and (min-width:480px) and (max-width:1199px) {
     width: 370px;
-
+font-size: 20px;
     
 }
+
+@media screen and (min-width:1200px) {
+width: 448px;
+font-size: 20px;
+}
+
 }
 .form-field {
     position: relative;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-
+    width: 100%;
 
 @media screen and (min-width:480px) and (max-width:1199px) {
-        width: 400px;
-
+width: 400px;
+align-items: flex-start;
 
     }
+
+@media screen and (min-width:1200px) {
+    width: 448px;
+    align-items: flex-start;
+    
+
 }
+}
+
+.form-imput {
+    width: 100%;
+    display: block;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 14px 35px;
+   
+
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        width: 370px;
+        height: 40px;
+
+    }
+
+    @media screen and (min-width:1200px) {
+        height: 40px;
+        min-width: 448px;
+    }
+}
+
+.from-label {
+    width: 100%;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+
+
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        width: 370px;
+
+    }
+} 
+
 
 .form-imput:focus-within {
     border: 1px solid red;
@@ -100,36 +162,11 @@ max-width: 450px;
     transform: translate(15px, -10px);
 }
 
-.from-label {
-    margin-bottom: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: #757575;
-
-    @media screen and (min-width:480px) and  (max-width:1199px) {
-            width: 370px;
-    
-        }
-}
 
 
 
-.form-imput {
-    display: block;
-    height: 40px;
-    width: 448px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 14px 35px;
 
-@media screen and (min-width:480px) and (max-width:1199px) {
-    width: 370px;
 
-    
-}
-}
 
 .form-field textarea::placeholder {
     height: 120px;
@@ -149,6 +186,7 @@ max-width: 450px;
 }
 
 .textarea-comment {
+    width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 120px;
@@ -159,12 +197,28 @@ max-width: 450px;
     
     
         }
+
+    @media screen and (min-width:1200px) {
+              
+        width: 448px;
+        
+                }
 }
 
 .policy {
+    
+    
     margin-top: 20px;
     align-items: center;
     justify-content: center;
+
+        @media screen and (min-width:480px) and (max-width:1199px) {
+display: flex;
+            }
+        
+            @media screen and (min-width:1200px) {
+display: flex;
+            }
 }
 
 .check:checked {
@@ -177,38 +231,58 @@ max-width: 450px;
     position: absolute;
 }
 
-.policy-label {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.policy-label { 
+            align-items: center;
+                justify-content: center;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71px;
     letter-spacing: 0.03em;
     color: #757575;
 
-    @media screen and (max-width:480px) {
-                display: flex;
-                width: 346px;
-                height: 14px;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
-                letter-spacing: 0.03em;
-            }
+
 
     @media screen and (min-width:480px) and (max-width:1199px) {
         display: flex;
-width: 346px;
-height: 14px;
-font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    letter-spacing: 0.03em;
+            align-items: center;
+                justify-content: center;
+        width: 346px;
+        height: 14px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.03em;
         }
+}
+
+.policy-text {
+    margin-left: 5px;
+    color: #2196F3;
+    border-bottom: 1px solid #2196F3;
+
+    font-size: 11px;
+  
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 14px;
+        letter-spacing: 0.03em;
+
+    }
+
+    @media screen and (min-width:1200px) {
+        
+font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+                }
 }
 
 .checkbox-craft {
@@ -249,26 +323,7 @@ font-family: 'Roboto';
 
 .modal-button:hover {fill: #2196F3;}
 
-.policy-text {
-    margin-left: 5px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #2196F3;
-    border-bottom: 1px solid #2196F3;
 
-@media screen and (min-width:480px) and (max-width:1199px) {
-    
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 11px;
-        line-height: 14px;
-        letter-spacing: 0.03em;
-    
-}
-}
 
 .submit-button {
     cursor: pointer;
@@ -292,6 +347,7 @@ font-family: 'Roboto';
 
 }
 .footer-submit {
+    width: 100%;    
     margin-top: 31px;
 
     @media screen and (min-width:480px) and (max-width1199px) {
